@@ -2,7 +2,7 @@
 \documentclass{beamer}
 % \input{Tareas-Template_short.tex}
 \input{UPRM-beamer-Template.tex}
-\title{Template}
+\title[EMJ and ML4TkDQM]{Trigger Studies for the Emerging Jets Analysis \\and Machine Learning for Tracker DQM \\at the CMS Experiment}
 % for documents
 % \author[1]{Guillermo Fidalgo Rodríguez} %[1] is to indicate connection with affil institute
 % \author{Tetiana}
@@ -13,24 +13,36 @@
 % for beamer
 \author[GAFR]{Guillermo Fidalgo}
 \institute[UPRM]{University of Puerto Rico - Mayagüez}
-%%%
+% Multiple logos
+\titlegraphic{
+    \includegraphics[width=1.55cm]{uprm_logo}
+    \hspace{2cm}
+    \includegraphics[width=1.5cm]{CMS_logo}
+    \hspace{2cm}
+    \includegraphics[width=1.5cm]{FNAL_Logo}
+}
+
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
 \begin{frame}
-	\frametitle{In the beginning}
+\tableofcontents
+\end{frame}
 
+\section{Introduction}
+\begin{frame}{In the beginning}
 	blah
 \end{frame}
 
 \section{Emerigin Jets Analysis}
 
-\begin{frame}{EMJ}
+\begin{frame}[fragile]{EMJ}
 	Starting off with what is EMJ about.
-
-
+    
+\begin{minted}{python3}
+print("Hello World!")
+\end{minted}
 \end{frame}
 
 \section{ML4DQM}
