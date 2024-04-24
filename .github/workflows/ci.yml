@@ -28,6 +28,8 @@ jobs:
           docker_image: ghcr.io/xu-cheng/texlive-small:latest
           pre_compile: |
            tlmgr update --self
+           tlmgr install babel minted graphicx verbatim appendixnumberbeamer
+           tlmgr install hyperref fancybox inputenc amsmath amsfonts amssymb
            tlmgr install wrapfig enumitem titlesec svg physics biblatex
            tlmgr install biblatex-phys tocbibind siunitx cleveref
            tlmgr install transparent graphbox
