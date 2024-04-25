@@ -31,7 +31,7 @@ jobs:
         with:
           root_file: main.tex
           docker_image: ghcr.io/xu-cheng/texlive-small:latest
-          pre_compile: tlmgr update --self && tlmgr install minted verbatim beamer svg physics biblatex wrapfig enumitem titlesec biblatex-phys tocbibind siunitx cleveref graphbox
+          pre_compile: "tlmgr update --self && tlmgr install minted verbatim svg physics wrapfig enumitem titlesec tocbibind siunitx cleveref graphbox"
       - uses: actions/upload-artifact@v4
         with:
           name: my-slides
