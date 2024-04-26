@@ -1,5 +1,5 @@
-% \documentclass{article}
 \documentclass[8pt,aspectratio=169]{beamer}
+% \documentclass{article}
 % \input{Tareas-Template_short.tex}
 \input{UPRM-beamer-Template.tex}
 \title[EMJ and ML4TkDQM]{Trigger Studies for the Emerging Jets Analysis \\and Machine Learning for Tracker DQM \\at the CMS Experiment}
@@ -16,10 +16,13 @@
 % Multiple logos
 \titlegraphic{
     \includegraphics[width=1.55cm]{uprm_logo.png}
-    \hspace{2cm}
+    % \hspace{2cm}
     \includegraphics[width=1.5cm]{CMS_logo.jpg}
-    \hspace{2cm}
+    % \hspace{2cm}
     \includegraphics[width=1.5cm]{FNAL_Logo.png}
+    % \hspace{2cm}
+    \hfill
+    \includegraphics[width=2.7cm]{Guillermo-Grad.png}
 }
 
 \begin{document}
@@ -32,15 +35,40 @@
 \end{frame}
 
 \section{Introduction}
+
+\begin{frame}{Standard Model of Particle Physics}
+\begin{columns}
+
+    \column{.5\textwidth}    
+        \begin{itemize}
+            \item The most successful theory we have.
+            \item Predicted the infamous Higgs Boson discovered in 2012.
+            \item Not complete. We still have more questions. 
+            \item Does not explain DM, DE, Matter-Antimatter Asymmetry \dots
+        \end{itemize}
+    \column{.5\textwidth}
+        \begin{figure}
+            \includegraphics[width=\linewidth]{Standard_Model.png}
+        \end{figure}
+\end{columns}
+\end{frame}
+
 \begin{frame}{What do we want to accomplish?}
 	\begin{itemize}
 		\item We want to explain why so much of our Universe is filled with unknown kinds of matter and energy.
 	\end{itemize}
 	\begin{figure}
 		\centering
-		\includegraphics[scale=.3,draft]{Energy_dist_pie.jpg}
-	\end{figure}
+        \begin{subfigure}[t]{0.45\linewidth}
+            \includegraphics[width=\linewidth]{galaxyrotationcurve.jpg}
+            \caption{Expected vs Observed rotational speed of mass in a galaxy w.r.t. distance from galaxy center.}
+        \end{subfigure}
+        \begin{subfigure}{0.45\linewidth}
+            \includegraphics[width=\linewidth]{Energy_dist_pie.jpg}
+        \end{subfigure}
+    \end{figure}
 \end{frame}
+
 \begin{frame}{What do we want to accomplish?}
 	\begin{columns}
 		\column{.4\linewidth}
