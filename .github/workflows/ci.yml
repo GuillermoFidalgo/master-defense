@@ -38,7 +38,9 @@ jobs:
           docker_image: ghcr.io/xu-cheng/texlive-small:latest
           pre_compile: |
             tlmgr update --self
-            tlmgr install wrapfig enumitem titlesec svg physics biblatex biblatex-phys tocbibind siunitx cleveref transparent graphbox minted appendixnumberbeamer hyperref
+            tlmgr install wrapfig enumitem titlesec svg physics biblatex biblatex-phys
+            tlmgr install tocbibind siunitx cleveref transparent graphbox
+            tlmgr install minted appendixnumberbeamer hyperref
 
       - uses: actions/upload-artifact@v4
         with:
