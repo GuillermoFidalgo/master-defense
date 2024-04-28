@@ -353,3 +353,4 @@ TSWLatexianTemp*
 # My own additional ignores
 *.bak*
 main.pdf
+.DS_store

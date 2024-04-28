@@ -15,16 +15,16 @@
 \institute[UPRM]{University of Puerto Rico -- Mayagüez}
 % Multiple logos
 \titlegraphic{
-    \includegraphics[width=1.55cm]{uprm_logo.png}
+    \includegraphics[height=1.5cm]{uprm_logo.png}
     % \hspace{2cm}
-    \includegraphics[width=1.5cm]{CMS_logo.jpg}
+    \includegraphics[height=1.46cm]{CMS_logo.jpg}
     % \hspace{2cm}
-    \includegraphics[width=1.5cm]{FNAL_Logo.png}
+    \includegraphics[height=1.5cm]{LPC_logo.png}
     % \hspace{2cm}
     \hfill
     \includegraphics[width=2.7cm]{Guillermo-Grad.png}
 }
-
+\date{April 30, 2024}
 \begin{document}
 
 \maketitle
@@ -91,10 +91,10 @@
 
 \begin{frame}{CMS Detector}
 	\begin{itemize}
-		\item CMS is multipurpose with onion-like structure
+		\item CMS is multipurpose with an onion-like structure
 		\item Has 3.8 T magnetic field
 		\item Precise tracking system
-		\item Able to record events at a rate of 40 MHz
+		\item Able to record events at a rate of 40 MHz but this is filtered with the Trigger system
 	\end{itemize}
 	\begin{figure}
 		\centering
@@ -103,9 +103,13 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Trigger System}
+	\frametitle{Trigger System in CMS}
 	\begin{itemize}
-		\item CMS uses a two tier trigger system -- L1 and HLT
+		\item Responsible for selecting ``intersting'' events
+		\item Two tier trigger system -- L1 and HLT
+		\item L1 -- Calorimeters and Muon Detector
+		\item HLT -- Full event reconstruction
+		\item Data has to be certified
 	\end{itemize}
 	\vfill
 	\begin{figure}
@@ -114,11 +118,19 @@
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Data Quility Monitoring}
+	\begin{itemize}
+		\item Two workflows --- Online and Offline
+		\item Responsible for bookkeping and data certification
+		\item
+	\end{itemize}
 
+\end{frame}
 
 \section{Emerging Jets Analysis}
 
-\begin{frame}{EMJ}
+\begin{frame}{Emerging Jets}
 
 \end{frame}
 
@@ -128,5 +140,44 @@
 \section{Conclusions}
 
 
+
+\begin{frame}
+	\begin{center}
+		{\Huge Thank you.\\ \vspace{1cm} Any Questions?}
+	\end{center}
+\end{frame}
+
+
+%%%% Copy all this together %%%%%
+\appendix
+
+\section{Backup}
+
+\begin{frame}
+	\begin{center}
+		{\Huge Backup}
+	\end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\frametitle{Pictures}
+	\begin{figure}
+		\centering
+		\includegraphics[height=.8\paperheight]{Regions.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{More pictures}
+	\begin{center}
+		\includegraphics[width= .7\paperheight, angle=270]{Solenoid_piece.jpeg}
+		\includegraphics[width= .7\paperheight, angle=270]{HLT_farm.jpg}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\centering
+	\includegraphics[height = .35\linewidth,angle=90]{Me_at_CMS.jpg}
+\end{frame}
 
 \end{document}
