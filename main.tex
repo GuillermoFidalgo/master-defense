@@ -43,7 +43,7 @@
 		\begin{itemize}
 			\item The most successful theory we have
 			      \vspace*{1cm}
-			\item Predicted the infamous Higgs Boson discovered in 2012
+			\item Predicted the famous Higgs Boson discovered in 2012 (Nobel Prize)
 			      \vspace{1cm}
 			\item Not complete, we still have more questions
 		\end{itemize}
@@ -129,10 +129,7 @@
 				      \item Online -- Measure detector performance and raises alarm with low latency
 				      \item Offline -- Bookkeping and data certification
 			      \end{itemize}
-			\item Labor intensive
-			\item Lots of tools used to certify the data
 			\item Goal is to minimize bad (low quality) data from reaching physics datasets
-			\item ML can help!
 		\end{itemize}
 		\column{.6\linewidth}
 		\begin{figure}
@@ -141,7 +138,22 @@
 		\end{figure}
 	\end{columns}
 \end{frame}
+\begin{frame}
+	\frametitle{DQM Shifts}
+	\begin{itemize}
+		\item Shifters are at the heart of this important process
+		\item Labor intensive
+		\item Lots of tools used to certify the data
+		\item In the Upgraded detector, CMS Tracker alone will have 2 billion readout channels
+		\item ML can help!
+	\end{itemize}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=.9\linewidth,trim=0 0 0 5.6in,clip ]{ROC_FNAL.jpg}
+		\end{center}
+	\end{figure}
 
+\end{frame}
 
 \begin{frame}
 	\frametitle{ML4DQM}
@@ -152,6 +164,10 @@
 		\item New challenges with HL-LHC upgrade (scale up)
 		\item First we need to enable ML workflows
 	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth,trim = 0 4.1in 9.55in 0in, clip]{Project_Reco.png}
+	\end{figure}
 
 \end{frame}
 
@@ -171,9 +187,9 @@
 	\begin{itemize}
 		\item Automated the ingestion of new data
 		\item Can provide easier data exploration, input data and ML models
-		\item All to provide good quality data for Physics Analyses
+		\item All to provide good quality data for physics analyses
 	\end{itemize}
-	\includegraphics[width=\linewidth,trim= 0 5in 6in 0,clip]{MLP.png}
+	\includegraphics[width=\linewidth,trim= 0 7in 7in 0,clip]{MLP.png}
 \end{frame}
 
 \section{Emerging Jets Analysis}
@@ -183,7 +199,7 @@
 		\column{.5\linewidth}
 		\begin{itemize}
 			\item Dark Matter model with a field analogous to QCD
-			\item 2 phenomenological models -- Flavored and Unflavored
+			\item 2 phenomenological models -- Flavored (d,s,b) and Unflavored
 			\item DM particles interact with SM through a dark mediator $X_{DK}$ and can be potentially produced at the LHC
 		\end{itemize}
 		\column{.5\linewidth}
@@ -229,7 +245,13 @@
 	\begin{itemize}
 		\item Despite the amount of data collected and the improved methods used for the analysis (EJs ML Tagger) we did not see a significant deviation in the signal over the background
 		\item We impose limits with 95\% upper CL that can be found in the \href{https://doi.org/10.48550/arXiv.2403.01556}{paper}
-		      % \item
+
+		\item For the unflavored model, $m_{X_{DK}} <$  1950 GeV are excluded for $c\tau_{\pi_{DK}} \approx$ 100mm and $m_{\pi_{DK}}=$~10~GeV
+
+		\item  The flavor-aligned excludes $m_{X_{DK}} <$  1850 GeV at $c\tau^{max}_{\pi_{DK}} \approx$ 500mm for
+		      $m_{\pi_{DK}}$= 10GeV
+
+		\item This result surpasses the previous search for emerging jets in the unflavored scenario, and increases the limit of the dark mediator particle by $\approx$ 500GeV
 	\end{itemize}
 
 
@@ -264,24 +286,43 @@
 
 \end{frame}
 
-% \begin{frame}{Trigger Efficiency Studies: Scale Factors}
-
-
-% \end{frame}
 
 \section{Summary}
 
 \begin{frame}
 	\frametitle{Summary}
 	\begin{itemize}
-		\item At the LHC, physicists are working to study Dark Matter via production in high-energy collisions
-		\item DQM is an important workflow responsible of providing CMS high-quality data and ML can provide improvements
+		\item At the LHC, physicists are looking for Physics discoveries beyond the SM via high-energy collisions
+		\item ML4DQM is an important workflow responsible of providing CMS high-quality data and ML can provide improvements
 		\item Work is underway to provide a platform for ML development and ML4DQM studies
 		\item CMS is potentially sensitive to proposed dark matter models like EJs and new limits were set on this model
 		\item Trigger studies were performed for the EJs analysis and this work is to be published soon in JHEP.
 	\end{itemize}
 
 \end{frame}
+
+\begin{frame}{Semester Abroad and Presentations at FNAL and CERN, Switzerland}
+	\begin{figure}
+		\centering
+		\begin{subfigure}[t]{.9\linewidth}
+			\centering
+			\caption*{Semester at CERN}
+			\includegraphics[width=.3\linewidth]{Collage/Group1.jpg}
+			\includegraphics[width=.3\linewidth]{Collage/Group2.jpg}
+			\includegraphics[width=.3\linewidth]{Collage/GuillermoFidalgoRodriguez.jpg}
+		\end{subfigure}
+
+		\begin{subfigure}[b]{.9\linewidth}
+			\centering
+			\includegraphics[width=.3\linewidth]{Collage/Guillermo_Talk1.jpg}
+			\includegraphics[width=.3\linewidth,trim= 0 6.2in 15in 1cm, clip]{Collage/Guillermo_Talk3.jpg}
+			\includegraphics[width=.3\linewidth]{Collage/Guillermo_Talk2.jpg}
+			\caption*{New Perspectives / USCMS Users Meeting}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+
 
 \begin{frame}
 	\frametitle{Acknowledgments}
@@ -329,19 +370,24 @@
 
 \begin{frame}
 	\frametitle{More pictures}
-	\begin{center}
-		\includegraphics[width= .7\paperheight, angle=270]{Solenoid_piece.jpeg}
-		\includegraphics[width= .7\paperheight, angle=270]{HLT_farm.jpg}
-	\end{center}
-\end{frame}
-\begin{frame}
-	\centering
-	\includegraphics[height = .35\linewidth,angle=90]{Me_at_CMS.jpg}
+	\begin{figure}
+		\begin{subfigure}{.32\linewidth}
+			\centering
+			\includegraphics[width=6cm, angle=270]{Solenoid_piece.jpeg}
+		\end{subfigure}
+		\begin{subfigure}{.32\linewidth}
+			\centering
+			\includegraphics[width=6cm, angle=270]{HLT_farm.jpg}
+		\end{subfigure}
+		\begin{subfigure}{.32\linewidth}
+			\centering
+			\includegraphics[width=6cm, angle=90]{Me_at_CMS.jpg}
+		\end{subfigure}
+	\end{figure}
 \end{frame}
 
 \begin{frame}{ML4DQM}
 	\centering
-	\includegraphics<1>[width=\linewidth]{Project_Reco.png}
-	\includegraphics<2>[width=\linewidth]{pdfs/modelTB.pdf}
+	\includegraphics[width=\linewidth]{pdfs/modelTB.pdf}
 \end{frame}
 \end{document}
